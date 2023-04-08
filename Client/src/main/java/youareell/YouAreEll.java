@@ -25,7 +25,7 @@ public class YouAreEll {
     }
 
     public String get_messages() {
-        return MakeURLCall("/messages", "GET", "");
+        return tt.makecall("/messages", "GET", "");
     }
 
 

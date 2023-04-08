@@ -1,16 +1,20 @@
-package controllers;//import spiffyURLManipulator
+package controllers;
 
-
+//import spiffyURLManipulator
 import models.Id;
 
-public class ServerController() {
+import javax.json.JsonString;
+import java.net.HttpURLConnection;
+
+public class ServerController{
+  // HttpURLConnection
     private String rootURL = "http://zipcode.rocks:8085";
 
-    private static ServerController svr = new ServerController();
+    private ServerController svr = new ServerController();
 
     private ServerController() {}
 
-    public static ServerController shared() {
+    public ServerController shared() {
         return svr;
     }
 

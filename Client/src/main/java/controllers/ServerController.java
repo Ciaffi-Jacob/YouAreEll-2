@@ -41,6 +41,3 @@ public class ServerController {
 
 
 }
-
-
-// ServerController.shared.doGet()
